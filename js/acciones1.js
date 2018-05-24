@@ -29,39 +29,3 @@ $(document).ready(function (e){
 function escribehistoria(accion){
 	$('#eHistoria').append('<li>'+accion+'</li>');
 }
-$(document).ready(function(e) {
-    document.addEventListener("deviceready",function(){
-		$('#sonar').tap(function(){
-			navigator.notification.beep(2);
-			//cierre del beep
-		});
-		$('#vibrar').tap(function(){
-			navigator.notification.vibrate(2000);
-			//cierre del vibrate
-		});
-	},false);//cierra el device ready
-		
-});//cierra document ready
-$(document).ready(function (e){
-	document.addEventListener ("deviceready",function(){
-		
-		$('#izquierda').on("swipeleft",function(){
-			navigator.notification. alert("Deslizo a la izquierda", function(){"Aplicacion 7" ,"Aceptar"
-});
-			
-$('#derecha').on("swipeleft",function(){
-	navigator.notification. confirm("¿Que quieres hacer?",function(opt){
-		switch(opt)
-		{
-			case 1:
-			navigator.notification.beep(1);
-			break;
-			
-			case 2:
-			navigator.notification.vibrate(1000);
-			break;
-		}
-	},"Aplicacion7","Beep, Vibrar,Cancelar");
-});
-	},false);
-});
